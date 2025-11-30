@@ -303,6 +303,20 @@
             position: relative;
         }
 
+        .hero-image {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+
+        .hero-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 25px 70px rgba(99, 91, 255, 0.3);
+        }
+
         .hero-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(20px);
@@ -1025,6 +1039,11 @@
                 margin: 0 auto;
             }
 
+            .hero-image {
+                border-radius: 16px;
+                margin-bottom: 1.5rem;
+            }
+
             .services-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -1119,6 +1138,11 @@
                 font-size: 2rem;
             }
 
+            .hero-image {
+                border-radius: 12px;
+                margin-bottom: 1rem;
+            }
+
             .hero-stats {
                 grid-template-columns: 1fr;
                 gap: 1rem;
@@ -1196,6 +1220,7 @@
                 </div>
             </div>
             <div class="hero-visual">
+                <img src="main-image.jpeg" alt="PractiScale IT Solutions Team" class="hero-image">
                 <div class="hero-card">
                     <div class="hero-stats">
                         <div class="stat-item">
